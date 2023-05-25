@@ -1,23 +1,31 @@
+import React from 'react'
+import Hero from '../components/Hero'
+import Invitation from '../components/Invitation'
+import PriceList from '../components/PriceList'
+import Faq from '../components/Faq'
+import Footer from '../components/Footer'
+import Payment from '../components/Payment'
+import Testimonials from '../components/Testimonials'
+import Katalog from '../components/Katalog'
+import Fitur from '../components/Fitur'
 
-import React from "react";
-import Hero from "../components/Hero";
-import Platform from "../components/Platform";
-import PriceList from "../components/PriceList";
-import Caraousel from "../components/Carousel";
-import Navbar from "../components/Navbar";
-import Priview from "../components/Priview";
+// import TopBar from "../components/TopBar";
 
 const Home = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      {/* <TopBar /> */}
       <Hero />
-      <Caraousel />
-      <Platform />
-      <Priview />
-      {/* <PriceList /> */}
+      <Invitation />
+      <Fitur />
+      <Katalog />
+      <PriceList />
+      <Testimonials />
+      <Faq />
+      <Payment />
+      <Footer />
     </div>
-  );
-};
+  )
+}
 
 export default Home
