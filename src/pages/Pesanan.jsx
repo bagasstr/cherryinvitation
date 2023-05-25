@@ -5,6 +5,8 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 import { paket } from '../data'
 import { desain } from '../data'
 import Payment from '../components/Payment'
+import { BiXCircle } from 'react-icons/bi'
+import { NavLink } from 'react-router-dom'
 
 const Pesanan = () => {
   const [selected, setSelected] = useState(paket[1])
@@ -16,7 +18,12 @@ const Pesanan = () => {
 
   return (
     <>
-      <div className='container my-40'>
+      <div className='container my-32'>
+        <div className='pb-10 flex justify-end max-w-4xl'>
+          <NavLink to='/'>
+            <BiXCircle className='text-4xl cursor-pointer' />
+          </NavLink>
+        </div>
         <div className='flex justify-center flex-col items-center'>
           <h1 className='font-bold text-3xl mb-2'>Pesan Undangan Sekarang</h1>
           <p className='text-xl w-96 text-center font-light'>

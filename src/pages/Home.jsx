@@ -8,6 +8,7 @@ import Payment from '../components/Payment'
 import Testimonials from '../components/Testimonials'
 import Katalog from '../components/Katalog'
 import Fitur from '../components/Fitur'
+import Navbar from '../components/Navbar'
 
 // import TopBar from "../components/TopBar";
 
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <div>
       {/* <TopBar /> */}
+      <Navbar />
       <Hero />
       <Invitation />
       <Fitur />

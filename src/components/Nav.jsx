@@ -14,6 +14,7 @@ import {
 
 // import data
 import { nav } from '../data'
+import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
   let Link = Scroll.Link
